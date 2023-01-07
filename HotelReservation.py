@@ -49,7 +49,7 @@ while again.lower() == "y":
         rate = 105.0
         rate_message = "(High season)"
     total_nights = (departure_date - arrival_date).days
-    total_cost = rate * totaltotal_nights
+    total_cost = rate * total_nights
     
     # format results
     date_format = "%D %d, %Y"
@@ -58,11 +58,11 @@ while again.lower() == "y":
     print(f"Departure Date: {departure_date:{date_format}}")
     print(f"Nightly rate:   {locale.currency(rate)} {rate_message}")
     print(f"Total nights:   {total_nights}")
-    print(f"Total price:    {locale.currency(total_cost}}")
+    print(f"Total price:    {locale.currency(total_cost)}")
     print()
 
     # ask if user wants to continue
     again = input("Continue? (y/n): ")
     print()
 
-    print("Bye!")
+print("Bye!")
